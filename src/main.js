@@ -1,8 +1,22 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './App'
+ 
+// let Bus = new Vue()
 
-Vue.config.productionTip = false
+
+
+
+// export default  Bus 
+export const Bus = new Vue()
+
+
+
+
+
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#crudApp',
+  render: h => h(App)
+})
+
+
